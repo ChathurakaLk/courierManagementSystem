@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19D449A8-25B6-4773-88A5-44BBF45A0FB0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_0._12Login</RootNamespace>
+    <AssemblyName>0.12Login</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AlphaBlendTextBox">
+      <HintPath>C:\Users\DELL\Desktop\project curiyer\rounded corners\rounded corners\bin\Debug\AlphaBlendTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Circular Buttons">
+      <HintPath>C:\Users\DELL\Desktop\project curiyer\rounded corners\rounded corners\bin\Debug\Circular Buttons.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>C:\Users\DELL\Desktop\project curiyer\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Coustermers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coustermers.Designer.cs">
+      <DependentUpon>Coustermers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashbord.Designer.cs">
+      <DependentUpon>Dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryRates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliveryRates.Designer.cs">
+      <DependentUpon>DeliveryRates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomMsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomMsgBox.Designer.cs">
+      <DependentUpon>CustomMsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parcels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parcels.Designer.cs">
+      <DependentUpon>parcels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parcels2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parcels2.Designer.cs">
+      <DependentUpon>Parcels2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parcelsViwe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parcelsViwe.Designer.cs">
+      <DependentUpon>parcelsViwe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="riders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="riders.Designer.cs">
+      <DependentUpon>riders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signUp.Designer.cs">
+      <DependentUpon>signUp.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Coustermers.resx">
+      <DependentUpon>Coustermers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashbord.resx">
+      <DependentUpon>Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryRates.resx">
+      <DependentUpon>DeliveryRates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomMsgBox.resx">
+      <DependentUpon>CustomMsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parcels.resx">
+      <DependentUpon>parcels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parcels2.resx">
+      <DependentUpon>Parcels2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parcelsViwe.resx">
+      <DependentUpon>parcelsViwe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="riders.resx">
+      <DependentUpon>riders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signUp.resx">
+      <DependentUpon>signUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vvc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ctydtcuyc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\us1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\us2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hbwb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ssssaa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ccv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cddss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dwww.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ctydtcuyc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ssdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3686725.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MMMN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CCD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dfdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dfddsss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hhh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fddd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fddd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xqqqq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xss1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xss2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xss3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xss4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dfddsss1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ffdz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fddd2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fffds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gggf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dfddsw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gggf1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dfddsw1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gggf2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xxxxxxxs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xxxxxxxs1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dss1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dss2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fffd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ggg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dssa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dss3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dfff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fddd3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xss5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dfddsw2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rrrrr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kkko.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mmmmmmmm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbbbbbbb.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
